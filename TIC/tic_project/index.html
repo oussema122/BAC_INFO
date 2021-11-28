@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>inscription</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<img src="img/home.jpg">
+	<h1>FICHE ELEVE</h1>
+	<br>
+	<p>Complétez le formulaire, les champs marqué par * sont <em>obligatoires</em></p>
+	<form>
+		<fieldset>
+			<legend>Informations personelles</legend>
+			<label>C.N.I:*</label>
+			<input type="text" name="cin" id="cin">
+			<br>
+			<label>Nom:*</label>
+			<input type="text" name="nom" id="nom">
+			<br>
+			<label>Pernom:*</label>
+			<input type="text" name="Pernom" id="pernom">
+			<br>
+			<label>Date de naissance:*</label>
+			<input type="date" name="date">
+			<br>
+			<label>ville de naissance:*</label>
+			<select>
+				<option>Maroc</option>
+				<option>Tunis</option>
+				<option>sousa</option>
+			</select>
+			<br>
+			<label>Genre;*</label>
+			<input type="radio" name="Genre" value="Mr" id="h">homme
+			<input type="radio" name="Genre" value="Mlle" id="f">femme
+			<br>
+			<label>vos interets:</label>
+			<input type="checkbox" name="c1" id="sp">sport
+			<input type="checkbox" name="c2" id="mu">musique
+			<input type="checkbox" name="c2" id="in">internt
+		</fieldset>
+		<fieldset>
+			<legend>Contact:</legend>
+			<label>N° let:*</label>
+			<input type="tel" name="tel" id="tel">
+			<br>
+			<label>Email:*</label>
+			<input type="email" name="email">
+			<br>
+			<label>adresse:</label>
+			<textarea name="S1" cols="30" rows="5"></textarea>
+			<br>
+			<button type="button" onclick="inscri()">inscription</button>
+			<button>Annuler</button>
+		</fieldset>
+		</form>
+	<p id="sortie"></p>
+	<script src="controle.js"></script>
+</body>
+</html>
